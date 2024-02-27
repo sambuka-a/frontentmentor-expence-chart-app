@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/header/Header';
+import Expences from './features/expences/Expences';
+
+import './index.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <div className="container">
+      <Header />
+      <Expences />
+      <div className="attribution">
+        Challenge by{' '}
         <a
-          className="App-link"
-          href="https://reactjs.org"
+          href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+          rel="noopener noreferrer">
+          Frontend Mentor
         </a>
-      </header>
+        . Coded by <a href="https://www.frontendmentor.io/profile/sambuka-a">Sambuka</a>.
+      </div>
     </div>
   );
 }
-
 export default App;

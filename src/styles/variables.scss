@@ -1,0 +1,44 @@
+//Colors
+//Primary
+
+$softRed: hsl(10, 79%, 65%);
+$cyan: hsl(186, 34%, 60%);
+
+//Neutral
+$darkbrown: hsl(25, 47%, 15%);
+$mediumbrown: hsl(28, 10%, 53%);
+$cream: hsl(27, 66%, 92%);
+$veryPaleOrange: hsl(33, 100%, 98%);
+
+//Typography
+//font
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+$DmSansFont: "DM Sans", sans-serif;
+
+//font weight
+$fw-light: 400;
+$fw-regular: 500;
+$fw-bold: 700;
+
+//font sizes
+$fs-xs: 0.25rem;
+$fs-reg: 1.25rem;
+$fs-sb: 2rem; 
+$fs-seb: 2.75rem;
+
+//breakpoints
+$sm: 520px;
+$lg: 1024px;
+
+@mixin breakpoint($point) {
+    @if $point == sm {
+        @media(min-width: $sm) {
+            @content
+        }
+    }
+    @if $point == lg {
+        @media(min-width: $lg) {
+            @content
+        }
+    }
+}

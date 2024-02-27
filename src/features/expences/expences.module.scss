@@ -1,0 +1,53 @@
+@import '../../styles/variables.scss';
+
+.expences {
+  background-color: $veryPaleOrange;
+  padding: 2rem;
+  border-radius: 2rem;
+  width: 100%;
+
+  .expencesGraphTitle {
+    font-size: $fs-reg;
+    padding-bottom: 2rem;
+  }
+
+  .expencesFooter {
+    margin-top: 2rem;
+    border-top: 2px solid $mediumbrown;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    color: $mediumbrown;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      span {
+        margin-top: 0.25rem;
+        color: $darkbrown;
+        font-size: $fs-reg;
+        font-weight: $fw-bold;
+
+        @include breakpoint(sm) {
+          font-size: $fs-seb;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+
+      span {
+        color: $darkbrown;
+        font-size: $fs-reg;
+        font-weight: $fw-bold;
+        margin-bottom: 0.25rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import '../../styles/variables.scss';
+
+.header {
+  color: $veryPaleOrange;
+  background-color: $softRed;
+  padding: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  width: 100%;
+
+
+  span {
+    font-size: $fs-reg;
+    font-weight: $fw-bold;
+
+    @include breakpoint(sm) {
+      font-size: $fs-seb;
+    }
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
